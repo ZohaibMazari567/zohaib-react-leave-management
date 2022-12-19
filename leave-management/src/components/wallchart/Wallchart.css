@@ -1,0 +1,1975 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (min-width: 0px) and (max-width: 320px) {
+    /* --------------------------------------------------      */
+  
+    .mobile-navbar-btn {
+      display: block;
+      z-index: 999;
+  
+      height: 20px;
+      padding-bottom: 15px;
+      margin-top: 10px;
+    }
+    .header {
+      position: relative;
+      z-index: 10;
+    }
+    .navbar-list {
+      text-align: center;
+      display: flex;
+      list-style-type: none;
+      margin-top: 22px;
+      padding: 0px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 27px;
+    }
+    .header-logo-manu{
+      margin-right: 20pxpx;
+      
+    }
+    .navbar-list li{
+      border-bottom: 2px solid #e3e3e3;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-link {
+      
+    
+      text-decoration: none;
+      padding: 8px;
+      font-size: 25px;
+      color: rgb(139, 136, 136);
+      font-weight: 800;
+    }
+  
+    .navbar {
+      width: 100%;
+      height: auto;
+      background: rgb(236, 236, 236);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      padding-top: 10px;
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+      opacity: 0;
+      visibility: hidden;
+  
+      pointer-events: none;
+    }
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+      border-radius: 50px;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      list-style-type: none;
+    }
+ 
+  
+    .button {
+      display: none;
+    }
+  
+    .active .navbar {
+      transform: translateX(0);
+  
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+    .mobile-navbar-btn {
+      margin-right: 20px;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+    /* --------------------------------  */
+
+
+  .pto-profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pto-profile {
+    justify-content: space-between;
+  }
+
+  .user-pic-name {
+    margin-top: 10px;
+  }
+
+  #profile-pic {
+    border-radius: 70px;
+    border: 3px solid rgb(5, 190, 247);
+    padding: 4px;
+    width: 100px;
+    height: 100px;
+  }
+  .user-name-position {
+    margin-top: -10px;
+  }
+  #user-name {
+    font-size: 25px;
+    height: 15px;
+  }
+  #user-position {
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(90, 90, 90);
+  }
+
+  .number-of-days {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    width: 89%;
+    margin: auto;
+    padding: 0px 5px;
+}
+.leave-days-summary{
+  
+  font-size: 13px;
+  font-weight: 600;
+}
+
+  /* --------------------approve page  responsive css -------------- */
+
+  .pto-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 740px;
+    max-width: 522px;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .pto {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pto-heading {
+    margin-left: 0px;
+    width: 184px;
+    height: 0px;
+    margin-top: -10px;
+    font-size: small;
+  }
+  .pending {
+    border-radius: 20px;
+    margin-right: 18px;
+    background-color: rgb(230, 230, 230);
+    padding-top: 8px;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .pending-icon {
+    font-size: 10px;
+    color: rgb(206, 206, 206);
+    background-color: rgb(95, 94, 94);
+    padding: 4px 4px 4px 4px;
+    border-radius: 10px;
+    align-content: center;
+  }
+
+  .pto-box {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid rgb(161, 161, 161);
+    width: 93%;
+    padding-left: 7px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    height: 70px;
+    justify-content: space-between;
+  }
+  .day {
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+  .month {
+    font-weight: 900;
+  }
+  .year {
+    margin-top: 45px;
+    margin-right: 10px;
+
+    color: rgb(104, 104, 104);
+  }
+  .purpos {
+    width: 170px;
+    background-color: rgb(226, 226, 226);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    color: rgb(3, 136, 245);
+  }
+  .purpos-box {
+    margin-top: 5px;
+    
+  }
+  .leave-reason {
+    width: 93%;
+    margin-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 7px;
+    border-radius: 4px;
+    background-color: rgb(247, 251, 255);
+    border: 1px solid rgb(190, 198, 209);
+  }
+  .leave-reason-text{
+    font-size: 15px;
+  }
+  .note-input {
+    width: 93%;
+    padding-bottom: 90px;
+  }
+  .arrow {
+    text-align: center;
+    margin-top: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    rotate: 90deg;
+
+
+  }
+  .pto-hr {
+    margin-top: 20px;
+    border: none;
+    padding-bottom: 2px;
+    background-color: rgb(233, 233, 233);
+    width: 95%;
+    margin-right: 14px;
+  }
+  .work-days {
+    color: rgb(136, 136, 136);
+
+    margin-top: 25px;
+  }
+  .btn {
+    text-align: center;
+    margin: auto;
+    width: 93%;
+    padding: 8px 0px;
+    padding-right: 5px;
+  }
+  .reject {
+    padding: 10px 10px 10px 10px;
+    margin-right: 15px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: 600;
+    color: red;
+  }
+  .approve {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(3, 136, 245);
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(3, 136, 245);
+    font-weight: 600;
+   
+  }
+  .note {
+    margin-top: -5px;
+  
+  }
+
+  /* upcoming public holidays list  responsive css */
+
+  .upcoming-list-section {
+    height: 700px;
+
+    margin-top: 70px;
+  }
+  .upcoming-holidays-list {
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+  }
+ 
+  .holidays-table {
+    width: 95%;
+  
+margin: auto;
+  }
+
+  .upcoming-list-table-row {
+    justify-content: space-between;
+  }
+
+  .column-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .list-date {
+    height: 12px;
+    margin-top: 0;
+  }
+  .holidays-week {
+    height: 0px;
+    color: rgb(121, 121, 121);
+  }
+  .holidays-reason {
+    margin-top: 15px;
+    height: 0px;
+  }
+  .upcomming-list-hr {
+    border: none;
+    padding: 1px;
+    background-color: rgb(199, 197, 197);
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+  }
+  
+
+
+
+
+@media (min-width: 321px) and (max-width: 375px) {
+    /* --------------------------------------------------      */
+  
+    .mobile-navbar-btn {
+      display: block;
+      z-index: 999;
+  
+      height: 20px;
+      padding-bottom: 15px;
+      margin-top: 10px;
+    }
+    .header {
+      position: relative;
+      z-index: 10;
+    }
+    .navbar-list {
+      text-align: center;
+      display: flex;
+      list-style-type: none;
+      margin-top: 22px;
+      padding: 0px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 27px;
+    }
+    .header-logo-manu{
+      margin-right: 20pxpx;
+      
+    }
+    .navbar-list li{
+      border-bottom: 2px solid #e3e3e3;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-link {
+      
+    
+      text-decoration: none;
+      padding: 8px;
+      font-size: 25px;
+      color: rgb(139, 136, 136);
+      font-weight: 800;
+    }
+    .navbar {
+      width: 100%;
+      height: auto;
+      background: rgb(236, 236, 236);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      padding-top: 10px;
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+      opacity: 0;
+      visibility: hidden;
+  
+      pointer-events: none;
+    }
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+      border-radius: 50px;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      list-style-type: none;
+    }
+   
+    .button {
+      display: none;
+    }
+  
+    .active .navbar {
+      transform: translateX(0);
+  
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+    .mobile-navbar-btn {
+      margin-right: 20px;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+    /* --------------------------------  */
+
+
+  .pto-profile {
+    /* display: flex; */
+    text-align: center;
+  }
+
+  .pto-profile {
+    justify-content: space-between;
+  }
+
+  .user-pic-name {
+    margin-top: 10px;
+  }
+
+  #profile-pic {
+    border-radius: 70px;
+    border: 3px solid rgb(5, 190, 247);
+    padding: 4px;
+    width: 100px;
+    height: 100px;
+  }
+  .user-name-position {
+    margin-top: -10px;
+  }
+  #user-name {
+    font-size: 25px;
+    height: 15px;
+  }
+  #user-position {
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(90, 90, 90);
+  }
+
+  .number-of-days {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    width: 89%;
+    margin: auto;
+    padding: 0px 5px;
+}
+.leave-days-summary{
+  
+  font-size: 13px;
+  font-weight: 600;
+}
+
+  /* --------------------approve page  responsive css -------------- */
+
+  .pto-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 740px;
+    max-width: 522px;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .pto {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pto-heading {
+    margin-left: 0px;
+    width: 184px;
+    height: 0px;
+    margin-top: -10px;
+    font-size: small;
+  }
+  .pending {
+    border-radius: 20px;
+    margin-right: 18px;
+    background-color: rgb(230, 230, 230);
+    padding-top: 8px;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .pending-icon {
+    font-size: 10px;
+    color: rgb(206, 206, 206);
+    background-color: rgb(95, 94, 94);
+    padding: 4px 4px 4px 4px;
+    border-radius: 10px;
+    align-content: center;
+  }
+
+  .pto-box {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid rgb(161, 161, 161);
+    width: 93%;
+    padding-left: 7px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    height: 70px;
+    justify-content: space-between;
+  }
+  .day {
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+  .month {
+    font-weight: 900;
+  }
+  .year {
+    margin-top: 45px;
+    margin-right: 10px;
+
+    color: rgb(104, 104, 104);
+  }
+  .purpos {
+    width: 170px;
+    background-color: rgb(226, 226, 226);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    color: rgb(3, 136, 245);
+  }
+  .purpos-box {
+    margin-top: 5px;
+    
+  }
+  .leave-reason {
+    width: 93%;
+    margin-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 7px;
+    border-radius: 4px;
+    background-color: rgb(247, 251, 255);
+    border: 1px solid rgb(190, 198, 209);
+  }
+  .leave-reason-text{
+    font-size: 15px;
+  }
+  .note-input {
+    width: 93%;
+    padding-bottom: 90px;
+  }
+  .arrow {
+    text-align: center;
+    margin-top: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    rotate: 90deg;
+
+  }
+  .pto-hr {
+    margin-top: 20px;
+    border: none;
+    padding-bottom: 2px;
+    background-color: rgb(233, 233, 233);
+    width: 95%;
+    margin-right: 14px;
+  }
+  .work-days {
+    color: rgb(136, 136, 136);
+
+    margin-top: 25px;
+  }
+  .btn {
+    text-align: center;
+    margin: auto;
+    width: 93%;
+    padding: 8px 0px;
+    padding-right: 5px;
+  }
+  .reject {
+    padding: 10px 10px 10px 10px;
+    margin-right: 15px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: 600;
+    color: red;
+  }
+  .approve {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(3, 136, 245);
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(3, 136, 245);
+    font-weight: 600;
+   
+  }
+  .note {
+    margin-top: -5px;
+  
+  }
+
+  /* upcoming public holidays list  responsive css */
+
+  .upcoming-list-section {
+    height: 700px;
+
+    margin-top: 70px;
+  }
+  .upcoming-holidays-list {
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+  }
+  
+  .holidays-table {
+    width: 95%;
+  
+margin: auto;
+  }
+
+  .upcoming-list-table-row {
+    justify-content: space-between;
+  }
+
+  .column-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .list-date {
+    height: 12px;
+    margin-top: 0;
+  }
+  .holidays-week {
+    height: 0px;
+    color: rgb(121, 121, 121);
+  }
+  .holidays-reason {
+    margin-top: 15px;
+    height: 0px;
+  }
+  .upcomming-list-hr {
+    border: none;
+    padding: 1px;
+    background-color: rgb(199, 197, 197);
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+  }
+  
+
+
+
+
+@media (min-width: 376px) and (max-width: 425px) {
+    /* --------------------------------------------------      */
+  
+    .mobile-navbar-btn {
+      display: block;
+      z-index: 999;
+  
+      height: 20px;
+      padding-bottom: 15px;
+      margin-top: 10px;
+    }
+    .header {
+      position: relative;
+      z-index: 10;
+    }
+    .navbar-list {
+      text-align: center;
+      display: flex;
+      list-style-type: none;
+      margin-top: 22px;
+      padding: 0px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 27px;
+    }
+    .header-logo-manu{
+      margin-right: 20pxpx;
+      
+    }
+    .navbar-list li{
+      border-bottom: 2px solid #e3e3e3;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-link {
+      
+    
+      text-decoration: none;
+      padding: 8px;
+      font-size: 25px;
+      color: rgb(139, 136, 136);
+      font-weight: 800;
+    }
+  
+    .navbar {
+      width: 100%;
+      height: auto;
+      background: rgb(236, 236, 236);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      padding-top: 10px;
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+      opacity: 0;
+      visibility: hidden;
+  
+      pointer-events: none;
+    }
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+      border-radius: 50px;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      list-style-type: none;
+    }
+ 
+    .button {
+      display: none;
+    }
+  
+    .active .navbar {
+      transform: translateX(0);
+  
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+    .mobile-navbar-btn {
+      margin-right: 20px;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+    /* --------------------------------  */
+
+
+  .pto-profile {
+    /* display: flex; */
+    text-align: center;
+  }
+
+  .pto-profile {
+    justify-content: space-between;
+  }
+
+  .user-pic-name {
+    margin-top: 10px;
+  }
+
+  #profile-pic {
+    border-radius: 70px;
+    border: 3px solid rgb(5, 190, 247);
+    padding: 4px;
+    width: 100px;
+    height: 100px;
+  }
+  .user-name-position {
+    margin-top: -10px;
+  }
+  #user-name {
+    font-size: 25px;
+    height: 15px;
+  }
+  #user-position {
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(90, 90, 90);
+  }
+
+  .number-of-days {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    width: 89%;
+    margin: auto;
+    padding: 0px 5px;
+}
+.leave-days-summary{
+  
+  font-size: 13px;
+  font-weight: 600;
+}
+
+  /* --------------------approve page  responsive css -------------- */
+
+  .pto-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: 740px;
+    max-width: 522px;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .pto {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pto-heading {
+    margin-left: 0px;
+    width: 184px;
+    height: 0px;
+    margin-top: -10px;
+    font-size: small;
+  }
+  .pending {
+    border-radius: 20px;
+    margin-right: 18px;
+    background-color: rgb(230, 230, 230);
+    padding-top: 8px;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .pending-icon {
+    font-size: 10px;
+    color: rgb(206, 206, 206);
+    background-color: rgb(95, 94, 94);
+    padding: 4px 4px 4px 4px;
+    border-radius: 10px;
+    align-content: center;
+  }
+
+  .pto-box {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid rgb(161, 161, 161);
+    width: 93%;
+    padding-left: 7px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    height: 70px;
+    justify-content: space-between;
+  }
+  .day {
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+  .month {
+    font-weight: 900;
+  }
+  .year {
+    margin-top: 45px;
+    margin-right: 10px;
+
+    color: rgb(104, 104, 104);
+  }
+  .purpos {
+    width: 170px;
+    background-color: rgb(226, 226, 226);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    color: rgb(3, 136, 245);
+  }
+  .purpos-box {
+    margin-top: 5px;
+    
+  }
+  .leave-reason {
+    width: 93%;
+    margin-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 7px;
+    border-radius: 4px;
+    background-color: rgb(247, 251, 255);
+    border: 1px solid rgb(190, 198, 209);
+  }
+  .leave-reason-text{
+    font-size: 15px;
+  }
+  .note-input {
+    width: 93%;
+    padding-bottom: 90px;
+  }
+  .arrow {
+    text-align: center;
+    margin-top: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    rotate: 90deg;
+
+   
+  }
+  .pto-hr {
+    margin-top: 20px;
+    border: none;
+    padding-bottom: 2px;
+    background-color: rgb(233, 233, 233);
+    width: 95%;
+    margin-right: 14px;
+  }
+  .work-days {
+    color: rgb(136, 136, 136);
+
+    margin-top: 25px;
+  }
+  .btn {
+    text-align: center;
+    margin: auto;
+    width: 93%;
+    padding: 8px 0px;
+    padding-right: 5px;
+  }
+  .reject {
+    padding: 10px 10px 10px 10px;
+    margin-right: 15px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: 600;
+    color: red;
+  }
+  .approve {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(3, 136, 245);
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(3, 136, 245);
+    font-weight: 600;
+   
+  }
+  .note {
+    margin-top: -5px;
+  
+  }
+
+  /* upcoming public holidays list  responsive css */
+
+  .upcoming-list-section {
+    height: 700px;
+
+    margin-top: 70px;
+  }
+  .upcoming-holidays-list {
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+  }
+ 
+  .holidays-table {
+    width: 95%;
+  
+margin: auto;
+  }
+
+  .upcoming-list-table-row {
+    justify-content: space-between;
+  }
+
+  .column-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .list-date {
+    height: 12px;
+    margin-top: 0;
+  }
+  .holidays-week {
+    height: 0px;
+    color: rgb(121, 121, 121);
+  }
+  .holidays-reason {
+    margin-top: 15px;
+    height: 0px;
+  }
+  .upcomming-list-hr {
+    border: none;
+    padding: 1px;
+    background-color: rgb(199, 197, 197);
+    width: 100%;
+    margin-left: 0px;
+  }
+  
+  }
+  
+
+/* tablet view  */
+
+
+@media (min-width: 426px) and (max-width: 768px) {
+    /* --------------------------------------------------      */
+  
+    .mobile-navbar-btn {
+      display: block;
+      z-index: 999;
+  
+      height: 20px;
+      padding-bottom: 15px;
+      margin-top: 10px;
+    }
+    .header {
+      position: relative;
+      z-index: 10;
+    }
+    .navbar-list {
+      text-align: center;
+      display: flex;
+      list-style-type: none;
+      margin-top: 22px;
+      padding: 0px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 27px;
+    }
+    .header-logo-manu{
+      margin-right: 20pxpx;
+      
+    }
+    .navbar-list li{
+      border-bottom: 2px solid #e3e3e3;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-link {
+      
+    
+      text-decoration: none;
+      padding: 8px;
+      font-size: 25px;
+      color: rgb(139, 136, 136);
+      font-weight: 800;
+    }
+  
+    .navbar {
+      width: 100%;
+      height: auto;
+      background: rgb(236, 236, 236);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      padding-top: 10px;
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+      opacity: 0;
+      visibility: hidden;
+  
+      pointer-events: none;
+    }
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+      border-radius: 50px;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      list-style-type: none;
+    }
+ 
+  
+    .button {
+      display: none;
+    }
+  
+    .active .navbar {
+      transform: translateX(0);
+  
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+    .mobile-navbar-btn {
+      margin-right: 20px;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+    /* --------------------------------  */
+
+
+  .pto-profile {
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 45px;
+    
+  }
+
+  .pto-profile {
+    justify-content: space-between;
+  }
+
+  .user-pic-name {
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    gap: 20px;
+}
+  
+
+  #profile-pic {
+    border-radius: 70px;
+    border: 3px solid rgb(5, 190, 247);
+    padding: 4px;
+    width: 100px;
+    height: 100px;
+  }
+
+  #user-name {
+    font-size: 25px;
+    height: auto;
+  }
+  #user-position {
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(90, 90, 90);
+  }
+
+  .number-of-days {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    width: 50%;
+    margin: auto;
+    padding: 0px 5px;
+}
+.leave-days-summary{
+  
+  font-size: 13px;
+  font-weight: 600;
+}
+
+  /* --------------------approve page  responsive css -------------- */
+
+  .pto-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: auto;
+    width: 95%;
+    margin: auto;
+    padding-top: 10px;
+    
+  }
+  .pto {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pto-heading {
+    margin-left: 0px;
+    width: 184px;
+    height: 0px;
+    margin-top: -10px;
+    font-size: small;
+  }
+  .pending {
+    border-radius: 20px;
+    margin-right: 18px;
+    background-color: rgb(230, 230, 230);
+    padding-top: 8px;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .pending-icon {
+    font-size: 10px;
+    color: rgb(206, 206, 206);
+    background-color: rgb(95, 94, 94);
+    padding: 4px 4px 4px 4px;
+    border-radius: 10px;
+    align-content: center;
+  }
+  .form2{
+    width: 100%;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+  }
+
+  .pto-box {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid rgb(161, 161, 161);
+    width: 90%;
+    padding-left: 7px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    height: 70px;
+    justify-content: space-between;
+  }
+  .day {
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+  .month {
+    font-weight: 900;
+  }
+  .year {
+    margin-top: 45px;
+    margin-right: 10px;
+
+    color: rgb(104, 104, 104);
+  }
+  .purpos {
+    width: 170px;
+    background-color: rgb(226, 226, 226);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    color: rgb(3, 136, 245);
+  }
+  .purpos-box {
+    margin-top: 5px;
+    
+  }
+  .leave-reason {
+    width: 99%;
+    margin-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 7px;
+    border-radius: 4px;
+    background-color: rgb(247, 251, 255);
+    border: 1px solid rgb(190, 198, 209);
+  }
+  .leave-reason-text{
+    font-size: 15px;
+  }
+  .note-input {
+    width: 99%;
+    padding-bottom: 90px;
+  }
+  .arrow {
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  
+  }
+  .pto-hr {
+    margin-top: 20px;
+    border: none;
+    padding-bottom: 2px;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+  
+  }
+  .work-days {
+    color: rgb(136, 136, 136);
+
+    margin-top: 10px;
+  }
+  .btn {
+    text-align: right;
+  
+    width: 93%;
+    padding: 8px 0px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-left: 48px;
+  }
+  .reject {
+    padding: 10px 10px 10px 10px;
+    margin-right: 15px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: 600;
+    color: red;
+  }
+  .approve {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(3, 136, 245);
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(3, 136, 245);
+    font-weight: 600;
+   
+  }
+  .note {
+    margin-top: -5px;
+  
+  }
+
+  /* upcoming public holidays list  responsive css */
+
+  .upcoming-list-section {
+    height: 700px;
+
+    margin-top: 70px;
+  }
+  .upcoming-holidays-list {
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    border-radius: 8px;
+  }
+ 
+  .holidays-table {
+    width: 95%;
+  
+margin: auto;
+  }
+
+  .upcoming-list-table-row {
+    justify-content: space-between;
+  }
+
+  .column-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .list-date {
+    height: 12px;
+    margin-top: 0;
+  }
+  .holidays-week {
+    height: 0px;
+    color: rgb(121, 121, 121);
+  }
+  .holidays-reason {
+    margin-top: 15px;
+    height: 0px;
+  }
+  .upcomming-list-hr {
+    border: none;
+    padding: 1px;
+    background-color: rgb(199, 197, 197);
+    width: 100%;
+    margin-left: 0px;
+  }
+  }
+  
+
+
+
+/* laptop view  */
+
+
+@media (min-width: 769px) and (max-width: 1024px){
+body{
+  background-color: rgba(233, 231, 231, 0.62);
+}
+  
+  .approve-leave-container {
+  
+    display: flex;
+    gap: 10px;
+  }
+
+  .profile-container {
+   
+    width: 70%;
+  }
+  .pto-profile {
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    gap: 45px;
+    
+  }
+
+  .pto-profile {
+    justify-content: space-between;
+  }
+
+  .user-pic-name {
+    margin-top: 10px;
+    width: 50%;
+    display: flex;
+    gap: 20px;
+}
+  
+
+  #profile-pic {
+    border-radius: 70px;
+    border: 3px solid rgb(5, 190, 247);
+    padding: 4px;
+    width: 100px;
+    height: 100px;
+  }
+
+  #user-name {
+    font-size: 25px;
+    height: auto;
+  }
+  #user-position {
+    font-weight: 600;
+    font-size: 13px;
+    color: rgb(90, 90, 90);
+  }
+
+  .number-of-days {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    width: 50%;
+    margin: auto;
+    padding: 0px 5px;
+}
+.leave-days-summary{
+  
+  font-size: 13px;
+  font-weight: 600;
+}
+
+  /* --------------------approve page  responsive css -------------- */
+
+  .pto-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    height: auto;
+    width: 95%;
+    margin: auto;
+  padding: 0px 10px;
+    padding-top: 10px;
+    
+  }
+  .pto {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pto-heading {
+    margin-left: 0px;
+    width: 184px;
+    height: 0px;
+    margin-top: -10px;
+    font-size: small;
+  }
+  .pending {
+    border-radius: 20px;
+    margin-right: 18px;
+    background-color: rgb(230, 230, 230);
+    padding-top: 8px;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .pending-icon {
+    font-size: 10px;
+    color: rgb(206, 206, 206);
+    background-color: rgb(95, 94, 94);
+    padding: 4px 4px 4px 4px;
+    border-radius: 10px;
+    align-content: center;
+  }
+  .form2{
+    width: 100%;
+    margin: auto;
+    gap: 10px;
+    display: flex;
+  }
+
+  .pto-box {
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid rgb(161, 161, 161);
+    width: 90%;
+    padding-left: 7px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    height: 70px;
+    justify-content: space-between;
+  }
+  .day {
+    margin-top: 15px;
+    margin-bottom: 12px;
+  }
+  .month {
+    font-weight: 900;
+  }
+  .year {
+    margin-top: 45px;
+    margin-right: 10px;
+
+    color: rgb(104, 104, 104);
+  }
+  .purpos {
+    width: 170px;
+    background-color: rgb(226, 226, 226);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    color: rgb(3, 136, 245);
+  }
+  .purpos-box {
+    margin-top: 5px;
+    
+  }
+  .leave-reason {
+    width: 99%;
+    margin-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 7px;
+    border-radius: 4px;
+    background-color: rgb(247, 251, 255);
+    border: 1px solid rgb(190, 198, 209);
+  }
+  .leave-reason-text{
+    font-size: 15px;
+  }
+  .note-input {
+    width: 99%;
+    padding-bottom: 90px;
+  }
+  .arrow {
+    margin-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  
+  }
+  .pto-hr {
+    margin-top: 20px;
+    border: none;
+    padding-bottom: 2px;
+    background-color: rgb(233, 233, 233);
+    width: 100%;
+  
+  }
+  .work-days {
+    color: rgb(136, 136, 136);
+
+    margin-top: 10px;
+  }
+  .btn {
+    text-align: right;
+  
+    width: 93%;
+    padding: 8px 0px;
+    padding-right: 5px;
+    margin-top: 10px;
+    margin-left: 48px;
+  }
+  .reject {
+    padding: 10px 10px 10px 10px;
+    margin-right: 15px;
+    background-color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-weight: 600;
+    color: red;
+  }
+  .approve {
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgb(3, 136, 245);
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(3, 136, 245);
+    font-weight: 600;
+   
+  }
+  .note {
+    margin-top: -5px;
+  
+  }
+
+  /* upcoming public holidays list  responsive css */
+
+  .upcoming-list-section {
+    height: 700px;
+width: 30%;
+    margin-top: 70px;
+    margin: auto;
+    margin-right: 10px;
+  }
+  .upcoming-holidays-list {
+    background-color: white;
+    width: 100%;
+    margin: auto;
+    border-radius: 8px;
+  }
+  .holidays-table-heading {
+    font-size: 15px;
+  
+  }
+  .holidays-table {
+    width: 95%;
+  
+margin: auto;
+  }
+
+  .upcoming-list-table-row {
+    justify-content: space-between;
+  }
+
+  .column-data {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .list-date {
+    height: 12px;
+    margin-top: 0;
+  }
+  .holidays-week {
+    height: 0px;
+    color: rgb(121, 121, 121);
+  }
+  .holidays-reason {
+    margin-top: 15px;
+    height: 0px;
+  }
+  .upcomming-list-hr {
+    border: none;
+    padding: 1px;
+    background-color: rgb(199, 197, 197);
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+
+/* large screen  */
+
+@media(min-width:1025px){
+  body{
+    background-color: rgba(233, 231, 231, 0.62);
+  }
+    
+    .approve-leave-container {
+    
+      display: flex;
+      gap: 10px;
+    }
+  
+    .profile-container {
+     
+      width: 70%;
+    }
+    .pto-profile {
+      justify-content: space-between;
+      width: 95%;
+      margin: auto;
+      display: flex;
+      gap: 45px;
+      
+    }
+  
+    .pto-profile {
+      justify-content: space-between;
+    }
+  
+    .user-pic-name {
+      margin-top: 10px;
+      width: 50%;
+      display: flex;
+      gap: 20px;
+  }
+    
+  
+    #profile-pic {
+      border-radius: 70px;
+      border: 3px solid rgb(5, 190, 247);
+      padding: 4px;
+      width: 100px;
+      height: 100px;
+    }
+
+    #user-name {
+      font-size: 25px;
+      height: auto;
+    }
+    #user-position {
+      font-weight: 600;
+      font-size: 13px;
+      color: rgb(90, 90, 90);
+    }
+  
+    .number-of-days {
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      height: 90px;
+      border: 2px solid rgb(211, 211, 211);
+      border-radius: 4px;
+      width: 50%;
+      margin: auto;
+      padding: 0px 5px;
+  }
+  .leave-days-summary{
+    
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+    /* --------------------approve page  responsive css -------------- */
+  
+    .pto-container {
+      background-color: rgb(255, 255, 255);
+      border-radius: 8px;
+      height: auto;
+      width: 95%;
+      margin: auto;
+    padding: 0px 10px;
+      padding-top: 10px;
+      
+    }
+    .pto {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .pto-heading {
+      margin-left: 0px;
+      width: 184px;
+      height: 0px;
+      margin-top: -10px;
+      font-size: small;
+    }
+    .pending {
+      border-radius: 20px;
+      margin-right: 18px;
+      background-color: rgb(230, 230, 230);
+      padding-top: 8px;
+      margin-top: 0px;
+      padding-bottom: 8px;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+  
+    .pending-icon {
+      font-size: 10px;
+      color: rgb(206, 206, 206);
+      background-color: rgb(95, 94, 94);
+      padding: 4px 4px 4px 4px;
+      border-radius: 10px;
+      align-content: center;
+    }
+    .form2{
+      width: 100%;
+      margin: auto;
+      gap: 10px;
+      display: flex;
+    }
+  
+    .pto-box {
+      display: flex;
+      margin-top: 10px;
+      border: 1px solid rgb(161, 161, 161);
+      width: 90%;
+      padding-left: 7px;
+      padding-bottom: 10px;
+      border-radius: 8px;
+      height: 70px;
+      justify-content: space-between;
+    }
+    .day {
+      margin-top: 15px;
+      margin-bottom: 12px;
+    }
+    .month {
+      font-weight: 900;
+    }
+    .year {
+      margin-top: 45px;
+      margin-right: 10px;
+  
+      color: rgb(104, 104, 104);
+    }
+    .purpos {
+      width: 170px;
+      background-color: rgb(226, 226, 226);
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      border-radius: 8px;
+      color: rgb(3, 136, 245);
+    }
+    .purpos-box {
+      margin-top: 5px;
+      
+    }
+    .leave-reason {
+      width: 99%;
+      margin-top: 20px;
+      padding-bottom: 60px;
+      padding-left: 7px;
+      border-radius: 4px;
+      background-color: rgb(247, 251, 255);
+      border: 1px solid rgb(190, 198, 209);
+    }
+    .leave-reason-text{
+      font-size: 15px;
+    }
+    .note-input {
+      width: 99%;
+      padding-bottom: 90px;
+    }
+    .arrow {
+      margin-top: 40px;
+      padding-left: 15px;
+      padding-right: 15px;
+  
+    
+    }
+    .pto-hr {
+      margin-top: 20px;
+      border: none;
+      padding-bottom: 2px;
+      background-color: rgb(233, 233, 233);
+      width: 100%;
+    
+    }
+    .work-days {
+      color: rgb(136, 136, 136);
+  
+      margin-top: 10px;
+    }
+    .btn {
+      text-align: right;
+    
+      width: 93%;
+      padding: 8px 0px;
+      padding-right: 5px;
+      margin-top: 10px;
+      margin-left: 48px;
+    }
+    .reject {
+      padding: 10px 10px 10px 10px;
+      margin-right: 15px;
+      background-color: white;
+      border: 1px solid red;
+      border-radius: 5px;
+      font-weight: 600;
+      color: red;
+    }
+    .approve {
+      padding: 10px 10px 10px 10px;
+      border: 1px solid rgb(3, 136, 245);
+      border-radius: 5px;
+      color: white;
+      background-color: rgb(3, 136, 245);
+      font-weight: 600;
+     
+    }
+    .note {
+      margin-top: -5px;
+    
+    }
+  
+    /* upcoming public holidays list  responsive css */
+  
+    .upcoming-list-section {
+      height: 700px;
+  width: 30%;
+      margin-top: 70px;
+      margin: auto;
+      margin-right: 10px;
+    }
+    .upcoming-holidays-list {
+      background-color: white;
+      width: 100%;
+      margin: auto;
+      border-radius: 8px;
+    }
+    .holidays-table-heading {
+      font-size: 15px;
+    
+    }
+    .holidays-table {
+      width: 95%;
+    
+  margin: auto;
+    }
+  
+    .upcoming-list-table-row {
+      justify-content: space-between;
+    }
+  
+    .column-data {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .list-date {
+      height: 12px;
+      margin-top: 0;
+    }
+    .holidays-week {
+      height: 0px;
+      color: rgb(121, 121, 121);
+    }
+    .holidays-reason {
+      margin-top: 15px;
+      height: 0px;
+    }
+    .upcomming-list-hr {
+      border: none;
+      padding: 1px;
+      background-color: rgb(199, 197, 197);
+      width: 100%;
+      margin-left: 0px;
+    }
+}
