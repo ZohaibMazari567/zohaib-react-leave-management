@@ -1,13 +1,25 @@
 import React from 'react'
 import "./Header.css";
 import { Link } from 'react-router-dom';
-const Header = () => {
+
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.querySelector(".header");
+
+const toggleNavbar = () => {
+  nav_header.classList.toggle("active");
+};
+
+mobile_nav.addEventListener("click", () => toggleNavbar());
+
+const Header = () =>
+{
   return (
    <>
+   
 
 <header class="header">
       <div className="header-logo-manu">
-        <img src={require("../images/logo.png")} alt="logo" class="header-logo" />
+        <img src="images/logo.png" alt="logo" class="header-logo" />
 
         <div className="manu">
           <nav className="navbar">
@@ -48,12 +60,12 @@ const Header = () => {
         </div>
 
         <div>
-          <img src={require("../images/setting.png")}alt="" class="navbar-icons" />
-          <img src={require("../images/notification.png")} alt="" class="navbar-icons" />
+          <img src="images/setting.png"alt="" class="navbar-icons" />
+          <img src="images/notification.png" alt="" class="navbar-icons" />
         </div>
 
         <div>
-          <img src={require("../images/pic.jpg")} alt="" class="profile" />
+          <img src="images/pic.jpg" alt="" class="profile" />
         </div>
 
         <div className="list2">
@@ -67,14 +79,16 @@ const Header = () => {
       </div>
 
       <div className="mobile-navbar-btn">
-        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
-        <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline" ></i>
+        <i class="fa-regular fa-circle-xmark mobile-nav-icon" name="close-outline"></i>
       </div>
     </header>
-
+   
+  
 
    </>
   )
 }
 
 export default Header
+

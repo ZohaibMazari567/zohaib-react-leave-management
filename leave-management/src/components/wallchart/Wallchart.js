@@ -5,7 +5,7 @@ const Wallchart = () => {
   return (
     <>
 
-<div class="approve-leave-container">
+<div className="approve-leave-container">
 
 
 
@@ -13,20 +13,20 @@ const Wallchart = () => {
 
 {/* <!-- ------------------------------------------------------------------  --> */}
 
-<div class="profile-container">
+<div className="profile-container">
 
 
-  <div class="user-profile-pto">
+  <div className="user-profile-pto">
 
 
-    <div class="pto-profile">
+    <div className="pto-profile">
 
 
-      <div class="user-pic-name">
+      <div className="user-pic-name">
 
 
-        <div> <img src="test2.jpeg" id="profile-pic" alt=""/> </div>
-        <div class="user-name-position">
+        <div> <img src="images/test2.jpeg" id="profile-pic" alt=""/> </div>
+        <div className="user-name-position">
           <h1 id="user-name">Nadia Jamrozik</h1>
           <p id="user-position">Product Manager</p>
         </div>
@@ -36,23 +36,23 @@ const Wallchart = () => {
 
 
 
-      <div class="number-of-days">
+      <div className="number-of-days">
 
         <div>
-          <p class="leave-days-summary">Year to Date</p>
+          <p className="leave-days-summary">Year to Date</p>
           <p>PTO</p>
         </div>
 
 
         <div>
-          <p class="leave-days-summary">Days Available</p>
+          <p className="leave-days-summary">Days Available</p>
           <p>5</p>
 
 
         </div>
         <div>
 
-          <p class="leave-days-summary">Days Used</p>
+          <p className="leave-days-summary">Days Used</p>
           <p>8</p>
         </div>
 
@@ -64,19 +64,19 @@ const Wallchart = () => {
     </div>
 
 
-    <div class="pto-container">
+    <div className="pto-container">
 
-      <div class="pto">
+      <div className="pto">
 
-        <div class="pto-heading">
+        <div className="pto-heading">
           <h2>
             Paid Time Off (PTO)
           </h2>
         </div>
 
-        <div class="pending">
+        <div className="pending">
 
-          <span><i class="fa-regular fa-clock pending-icon"></i></span>
+          <span><i className="fa-regular fa-clock pending-icon"></i></span>
 
 
           <span href=""> Pending</span>
@@ -84,38 +84,38 @@ const Wallchart = () => {
 
       </div>
 
-      <div class="form2">
+      <div className="form2">
 
-        <div class="pto-box">
+        <div className="pto-box">
           <div>
-            <h4 class="day">Monday</h4>
-            <span class="month">August 8</span>
+            <h4 className="day">Monday</h4>
+            <span className="month">August 8</span>
           </div>
-          <div class="year">
+          <div className="year">
             <span>2022</span>
           </div>
 
         </div>
 
-        <div class="arrow">
-          <i class="fa-solid fa-arrow-right"></i>
+        <div className="arrow">
+          <i className="fa-solid fa-arrow-right"></i>
 
         </div>
 
-        <div class="pto-box">
+        <div className="pto-box">
           <div>
-            <h4 class="day">Monday</h4>
-            <span class="month">August 8</span>
+            <h4 className="day">Monday</h4>
+            <span className="month">August 8</span>
           </div>
-          <div class="year"><span>2022</span></div>
+          <div className="year"><span>2022</span></div>
 
         </div>
 
-        <div class="purpos-box">
-          <p class="work-days">4 Work Days Requested</p>
-          <div class="purpos">
+        <div className="purpos-box">
+          <p className="work-days">4 Work Days Requested</p>
+          <div className="purpos">
 
-            <span><i class="fa-solid fa-pen"></i></span>
+            <span><i className="fa-solid fa-pen"></i></span>
 
 
             <span href=""> Purpose Changes</span>
@@ -125,24 +125,24 @@ const Wallchart = () => {
 
       </div>
 
-      <div class="leave-reason">
-        <p class="leave-reason-text">My child is out of school for break and i need to stay home for childcare</p>
+      <div className="leave-reason">
+        <p className="leave-reason-text">My child is out of school for break and i need to stay home for childcare</p>
 
       </div>
-      <hr class="pto-hr"/>
-      <div class="note">
+      <hr className="pto-hr"/>
+      <div className="note">
         <h4> Note from Management</h4>
       </div>
 
       <div>
-        <input type="text" class="note-input" 
+        <input type="text" className="note-input" 
           placeholder="Please enter your reason for approving or denying  the request  "/>
 
       </div>
 
-      <div class="btn">
-        <button class="reject">Reject Request</button>
-        <button class="approve">Approve Request</button>
+      <div className="btn">
+        <button className="reject">Reject Request</button>
+        <button className="approve">Approve Request</button>
       </div>
 
 
@@ -165,17 +165,17 @@ const Wallchart = () => {
 </div>
 
 
-<div class="upcoming-list-section">
+<div className="upcoming-list-section">
 
    
 
-  <div class="upcoming-holidays-list">
+  <div className="upcoming-holidays-list">
 
-    <div class="holidays-table-heading">
+    <div className="holidays-table-heading">
       <h2>Upcoming Public Holidays</h2>
     </div>
 
-    <table class="holidays-table">
+    <table className="holidays-table">
 
 
 
@@ -184,31 +184,31 @@ const Wallchart = () => {
 
 
 
-      <tr class="upcoming-list-table-row">
+      <tr className="upcoming-list-table-row">
 
         <td>
 
-          <div class="column-data">
+          <div className="column-data">
 
 
             <div>
 
               <div>
-                <h4 class="list-date">Jul 08, 2022</h4>
+                <h4 className="list-date">Jul 08, 2022</h4>
               </div>
               <div>
-                <p class="holidays-week">Friday</p>
+                <p className="holidays-week">Friday</p>
               </div>
 
             </div>
 
             <div>
-              <h4 class="holidays-reason">Arafat Day</h4>
+              <h4 className="holidays-reason">Arafat Day</h4>
             </div>
 
           </div>
 
-          <hr class="upcomming-list-hr"/>
+          <hr className="upcomming-list-hr"/>
 
         </td>
 
@@ -224,30 +224,30 @@ const Wallchart = () => {
 
 
 
-      <tr class="upcoming-list-table-row">
+      <tr className="upcoming-list-table-row">
 
         <td>
 
-          <div class="column-data">
+          <div className="column-data">
 
 
             <div>
 
               <div>
-                <h4 class="list-date">Jul 09, 2022</h4>
+                <h4 className="list-date">Jul 09, 2022</h4>
               </div>
               <div>
-                <p class="holidays-week">Saturday</p>
+                <p className="holidays-week">Saturday</p>
               </div>
 
             </div>
 
             <div>
-              <h4 class="holidays-reason">Eid al-Adha</h4>
+              <h4 className="holidays-reason">Eid al-Adha</h4>
             </div>
 
           </div>
-          <hr class="upcomming-list-hr"/>
+          <hr className="upcomming-list-hr"/>
 
         </td>
 
@@ -264,31 +264,31 @@ const Wallchart = () => {
 
 
 
-      <tr class="upcoming-list-table-row">
+      <tr className="upcoming-list-table-row">
 
         <td>
 
-          <div class="column-data">
+          <div className="column-data">
 
 
             <div>
 
               <div>
-                <h4 class="list-date">Jul 10, 2022</h4>
+                <h4 className="list-date">Jul 10, 2022</h4>
               </div>
               <div>
-                <p class="holidays-week">Sunday</p>
+                <p className="holidays-week">Sunday</p>
               </div>
 
             </div>
 
             <div>
-              <h4 class="holidays-reason">Eid al-Adha Holidays</h4>
+              <h4 className="holidays-reason">Eid al-Adha Holidays</h4>
             </div>
 
           </div>
 
-          <hr class="upcomming-list-hr"/>
+          <hr className="upcomming-list-hr"/>
         </td>
 
 
@@ -303,30 +303,30 @@ const Wallchart = () => {
 
 
 
-      <tr class="upcoming-list-table-row">
+      <tr className="upcoming-list-table-row">
 
         <td>
 
-          <div class="column-data">
+          <div className="column-data">
 
 
             <div>
 
               <div>
-                <h4 class="list-date">Jul 11, 2022</h4>
+                <h4 className="list-date">Jul 11, 2022</h4>
               </div>
               <div>
-                <p class="holidays-week">Monday</p>
+                <p className="holidays-week">Monday</p>
               </div>
 
             </div>
 
             <div>
-              <h4 class="holidays-reason">Eid al-Adha Holiday</h4>
+              <h4 className="holidays-reason">Eid al-Adha Holiday</h4>
             </div>
 
           </div>
-          <hr class="upcomming-list-hr"/>
+          <hr className="upcomming-list-hr"/>
 
         </td>
 
@@ -342,30 +342,30 @@ const Wallchart = () => {
 
 
 
-      <tr class="upcoming-list-table-row">
+      <tr className="upcoming-list-table-row">
 
         <td>
 
-          <div class="column-data">
+          <div className="column-data">
 
 
             <div>
 
               <div>
-                <h4 class="list-date">Jul 30, 2022</h4>
+                <h4 className="list-date">Jul 30, 2022</h4>
               </div>
               <div>
-                <p class="holidays-week">Saturday</p>
+                <p className="holidays-week">Saturday</p>
               </div>
 
             </div>
 
             <div>
-              <h4 class="holidays-reason">Islamic New Year</h4>
+              <h4 className="holidays-reason">Islamic New Year</h4>
             </div>
 
           </div>
-          <hr class="upcomming-list-hr"/>
+          <hr className="upcomming-list-hr"/>
 
         </td>
 
@@ -381,30 +381,30 @@ const Wallchart = () => {
 
 
 
-      <tr class="upcoming-list-table-row">
+      <tr className="upcoming-list-table-row">
 
         <td>
 
-          <div class="column-data">
+          <div className="column-data">
 
 
             <div>
 
               <div>
-                <h4 class="list-date">Oct 08, 2022</h4>
+                <h4 className="list-date">Oct 08, 2022</h4>
               </div>
               <div>
-                <p class="holidays-week">Saturday</p>
+                <p className="holidays-week">Saturday</p>
               </div>
 
             </div>
 
             <div>
-              <h4 class="holidays-reason">Prophet Birthday</h4>
+              <h4 className="holidays-reason">Prophet Birthday</h4>
             </div>
 
           </div>
-          <hr class="upcomming-list-hr"/>
+          <hr className="upcomming-list-hr"/>
 
         </td>
 
@@ -420,30 +420,30 @@ const Wallchart = () => {
 
 
 
-      <tr class="upcoming-list-table-row">
+      <tr className="upcoming-list-table-row">
 
         <td>
 
-          <div class="column-data">
+          <div className="column-data">
 
 
             <div>
 
               <div>
-                <h4 class="list-date">Dec 01, 2022</h4>
+                <h4 className="list-date">Dec 01, 2022</h4>
               </div>
               <div>
-                <p class="holidays-week">Thursday</p>
+                <p className="holidays-week">Thursday</p>
               </div>
 
             </div>
 
             <div>
-              <h4 class="holidays-reason">Commemoration Day</h4>
+              <h4 className="holidays-reason">Commemoration Day</h4>
             </div>
 
           </div>
-          <hr class="upcomming-list-hr"/>
+          <hr className="upcomming-list-hr"/>
 
         </td>
 
@@ -459,30 +459,30 @@ const Wallchart = () => {
 
 
 
-      <tr class="upcoming-list-table-row">
+      <tr className="upcoming-list-table-row">
 
         <td>
 
-          <div class="column-data">
+          <div className="column-data">
 
 
             <div>
 
               <div>
-                <h4 class="list-date">Dec 02, 2022</h4>
+                <h4 className="list-date">Dec 02, 2022</h4>
               </div>
               <div>
-                <p class="holidays-week">Friday</p>
+                <p className="holidays-week">Friday</p>
               </div>
 
             </div>
 
             <div>
-              <h4 class="holidays-reason">National Day</h4>
+              <h4 className="holidays-reason">National Day</h4>
             </div>
 
           </div>
-          <hr class="upcomming-list-hr"/>
+          <hr className="upcomming-list-hr"/>
 
         </td>
 
@@ -498,26 +498,26 @@ const Wallchart = () => {
 
 
 
-      <tr class="upcoming-list-table-row">
+      <tr className="upcoming-list-table-row">
 
         <td>
 
-          <div class="column-data">
+          <div className="column-data">
 
 
             <div>
 
               <div>
-                <h4 class="list-date">Dec 03, 2022</h4>
+                <h4 className="list-date">Dec 03, 2022</h4>
               </div>
               <div>
-                <p class="holidays-week">Saturday</p>
+                <p className="holidays-week">Saturday</p>
               </div>
 
             </div>
 
             <div>
-              <h4 class="holidays-reason">National Day Holiday</h4>
+              <h4 className="holidays-reason">National Day Holiday</h4>
             </div>
 
           </div>
