@@ -1,6 +1,6 @@
 import React from 'react'
 import './Wallchart.css'
-
+import { Link } from 'react-router-dom'
 const Wallchart = () => {
   return (
     <>

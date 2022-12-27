@@ -1,20 +1,42 @@
 import React from 'react'
 import "./Header.css";
+
 import { Link } from 'react-router-dom';
 
-const mobile_nav = document.querySelector(".mobile-navbar-btn");
+
+function click(){
+
+  const mobile_nav = document.querySelector(".mobile-navbar-btn");
 const nav_header = document.querySelector(".header");
 
-const toggleNavbar = () => {
-  nav_header.classList.toggle("active");
-};
+  
+  const toggleNavbar = () => {
+       
+    nav_header.classList.toggle("active");
 
-mobile_nav.addEventListener("click", () => toggleNavbar());
+  };
+  mobile_nav.addEventListener("click", () => toggleNavbar());
+
+}
+
+
+  
+
+
+
+
+
+  
+
+
+
 
 const Header = () =>
 {
   return (
+    
    <>
+   
    
 
 <header class="header">
@@ -79,16 +101,21 @@ const Header = () =>
       </div>
 
       <div className="mobile-navbar-btn">
-        <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline" ></i>
-        <i class="fa-regular fa-circle-xmark mobile-nav-icon" name="close-outline"></i>
+        <i class="fa-solid fa-bars mobile-nav-icon" name="menu-outline" onClick={click} ></i>
+        <i class="fa-regular fa-circle-xmark mobile-nav-icon" name="close-outline" onClick={click}></i>
       </div>
     </header>
+   
    
   
 
    </>
+
+   
+
   )
 }
+
 
 export default Header
 

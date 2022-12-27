@@ -302,6 +302,7 @@ body{
     margin-top: 70px;
   }
   .upcoming-holidays-list {
+    padding-top: 10px;
     background-color: white;
     width: 95%;
     margin: auto;
@@ -648,6 +649,7 @@ margin: auto;
     margin-top: 70px;
   }
   .upcoming-holidays-list {
+    padding-top: 10px;
     background-color: white;
     width: 95%;
     margin: auto;
@@ -997,6 +999,7 @@ margin: auto;
   }
   .upcoming-holidays-list {
     background-color: white;
+    padding-top: 10px;
     width: 95%;
     margin: auto;
     border-radius: 8px;
@@ -1361,6 +1364,7 @@ margin: auto;
     background-color: white;
     width: 95%;
     margin: auto;
+    padding-top: 10px;
     border-radius: 8px;
   }
  
@@ -1646,11 +1650,13 @@ width: 30%;
     background-color: white;
     width: 100%;
     margin: auto;
+    padding-top: 10spx;
     border-radius: 8px;
   }
   .holidays-table-heading {
     font-size: 15px;
-  
+    height: auto;
+    margin-left: 10px;
   }
   .holidays-table {
     width: 95%;
@@ -1930,11 +1936,15 @@ margin: auto;
     .upcoming-holidays-list {
       background-color: white;
       width: 100%;
-      margin: auto;
+      padding-top: 1px;
+      margin-top: 15px;
+      /* margin: auto; */
       border-radius: 8px;
     }
     .holidays-table-heading {
       font-size: 15px;
+      height: auto;
+      margin-left: 10px;
     
     }
     .holidays-table {
