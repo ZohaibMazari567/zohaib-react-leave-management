@@ -1,5 +1,6 @@
 import React from 'react'
 import './Wallchart.css'
+import UserData, { UpcomingHolidaysData } from '../userdata/TableData'
 import { Link } from 'react-router-dom'
 const Wallchart = () => {
   return (
@@ -179,12 +180,11 @@ const Wallchart = () => {
 
 
 
+     {
+      UpcomingHolidaysData.map((holidays)=>{
 
-
-
-
-
-      <tr className="upcoming-list-table-row">
+        return(
+          <tr className="upcoming-list-table-row">
 
         <td>
 
@@ -194,16 +194,16 @@ const Wallchart = () => {
             <div>
 
               <div>
-                <h4 className="list-date">Jul 08, 2022</h4>
+                <h4 className="list-date">{holidays.date}</h4>
               </div>
               <div>
-                <p className="holidays-week">Friday</p>
+                <p className="holidays-week">{holidays.day}</p>
               </div>
 
             </div>
 
             <div>
-              <h4 className="holidays-reason">Arafat Day</h4>
+              <h4 className="holidays-reason">{holidays.event}</h4>
             </div>
 
           </div>
@@ -217,316 +217,20 @@ const Wallchart = () => {
 
 
 
+        )
+
+      })
+     }
 
 
-{/* <!-- ------------------------------------------------------------- --> */}
 
-
-
-
-      <tr className="upcoming-list-table-row">
-
-        <td>
-
-          <div className="column-data">
-
-
-            <div>
-
-              <div>
-                <h4 className="list-date">Jul 09, 2022</h4>
-              </div>
-              <div>
-                <p className="holidays-week">Saturday</p>
-              </div>
-
-            </div>
-
-            <div>
-              <h4 className="holidays-reason">Eid al-Adha</h4>
-            </div>
-
-          </div>
-          <hr className="upcomming-list-hr"/>
-
-        </td>
-
-
-      </tr>
 
       
 
 
 
-{/* <!-- ------------------------------------------------------------- --> */}
 
-
-
-
-
-      <tr className="upcoming-list-table-row">
-
-        <td>
-
-          <div className="column-data">
-
-
-            <div>
-
-              <div>
-                <h4 className="list-date">Jul 10, 2022</h4>
-              </div>
-              <div>
-                <p className="holidays-week">Sunday</p>
-              </div>
-
-            </div>
-
-            <div>
-              <h4 className="holidays-reason">Eid al-Adha Holidays</h4>
-            </div>
-
-          </div>
-
-          <hr className="upcomming-list-hr"/>
-        </td>
-
-
-      </tr>
-
-
-
-
-
-{/* <!-- ------------------------------------------------------------- --> */}
-
-
-
-
-      <tr className="upcoming-list-table-row">
-
-        <td>
-
-          <div className="column-data">
-
-
-            <div>
-
-              <div>
-                <h4 className="list-date">Jul 11, 2022</h4>
-              </div>
-              <div>
-                <p className="holidays-week">Monday</p>
-              </div>
-
-            </div>
-
-            <div>
-              <h4 className="holidays-reason">Eid al-Adha Holiday</h4>
-            </div>
-
-          </div>
-          <hr className="upcomming-list-hr"/>
-
-        </td>
-
-
-      </tr>
-
-
-
-
-
-{/* <!-- ------------------------------------------------------------- --> */}
-
-
-
-
-      <tr className="upcoming-list-table-row">
-
-        <td>
-
-          <div className="column-data">
-
-
-            <div>
-
-              <div>
-                <h4 className="list-date">Jul 30, 2022</h4>
-              </div>
-              <div>
-                <p className="holidays-week">Saturday</p>
-              </div>
-
-            </div>
-
-            <div>
-              <h4 className="holidays-reason">Islamic New Year</h4>
-            </div>
-
-          </div>
-          <hr className="upcomming-list-hr"/>
-
-        </td>
-
-
-      </tr>
-
-
-
-
-{/* <!-- ------------------------------------------------------------- --> */}
-
-
-
-
-
-      <tr className="upcoming-list-table-row">
-
-        <td>
-
-          <div className="column-data">
-
-
-            <div>
-
-              <div>
-                <h4 className="list-date">Oct 08, 2022</h4>
-              </div>
-              <div>
-                <p className="holidays-week">Saturday</p>
-              </div>
-
-            </div>
-
-            <div>
-              <h4 className="holidays-reason">Prophet Birthday</h4>
-            </div>
-
-          </div>
-          <hr className="upcomming-list-hr"/>
-
-        </td>
-
-
-      </tr>
-
-
-
-
-{/* <!-- ---------------------------------------------------------------- --> */}
-
-
-
-
-
-      <tr className="upcoming-list-table-row">
-
-        <td>
-
-          <div className="column-data">
-
-
-            <div>
-
-              <div>
-                <h4 className="list-date">Dec 01, 2022</h4>
-              </div>
-              <div>
-                <p className="holidays-week">Thursday</p>
-              </div>
-
-            </div>
-
-            <div>
-              <h4 className="holidays-reason">Commemoration Day</h4>
-            </div>
-
-          </div>
-          <hr className="upcomming-list-hr"/>
-
-        </td>
-
-
-      </tr>
-
-
-
-
-
-{/* --------------------------------------------------------------- */}
-
-
-
-
-      <tr className="upcoming-list-table-row">
-
-        <td>
-
-          <div className="column-data">
-
-
-            <div>
-
-              <div>
-                <h4 className="list-date">Dec 02, 2022</h4>
-              </div>
-              <div>
-                <p className="holidays-week">Friday</p>
-              </div>
-
-            </div>
-
-            <div>
-              <h4 className="holidays-reason">National Day</h4>
-            </div>
-
-          </div>
-          <hr className="upcomming-list-hr"/>
-
-        </td>
-
-
-      </tr>
-
-
-
-
-
-{/* ------------------------------------------------------------------ */}
-
-
-
-
-      <tr className="upcoming-list-table-row">
-
-        <td>
-
-          <div className="column-data">
-
-
-            <div>
-
-              <div>
-                <h4 className="list-date">Dec 03, 2022</h4>
-              </div>
-              <div>
-                <p className="holidays-week">Saturday</p>
-              </div>
-
-            </div>
-
-            <div>
-              <h4 className="holidays-reason">National Day Holiday</h4>
-            </div>
-
-          </div>
-        
-
-        </td>
-
-
-      </tr>
+      
 
 
     </table>

@@ -66,6 +66,7 @@ const radio_btn1 = document.getElementById("radio_btn1");
 const radio_btn2 = document.getElementById("radio_btn2");
 const radio_btn3 = document.getElementById("radio_btn3");
 const radio_btn4 = document.getElementById("radio_btn4");
+
   if ((radio_btn4.checked = true)) {
     leave_type1.classList.remove("checked-box");
     leave_type2.classList.remove("checked-box");
@@ -147,7 +148,7 @@ const SubmitRequest = () => {
                 id="radio_btn4"
                 class="radio-btn" 
                 
-                onclick={func_4}
+                onClick={func_4}
                 />
               </div>
                 <div class="box-description">

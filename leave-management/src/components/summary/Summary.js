@@ -3,7 +3,70 @@ import { Link } from "react-router-dom";
 import UserData from "../userdata/TableData";
 import LeaveBox from "./LeaveBox";
 import LeavesTable from "./LeavesTable";
+import Next7DaysLeaves from "./Next7DaysLeaves";
 import "./Summary.css";
+
+const leave_date_To = [
+  ...new Set(
+    Next7DaysLeaves.map((data) => {
+
+    
+      return data.DateTo;
+    })
+  ),
+];
+
+
+
+
+
+
+
+const time1 = new Date();
+time1.setDate(time1.getDate());
+let Curent_date_day_from = new Intl.DateTimeFormat("en-US", {
+  day: "2-digit",
+}).format(time1);
+
+let Curent_date_month_from = new Intl.DateTimeFormat("en-US", {
+  month: "2-digit",
+}).format(time1); 
+
+let Curent_date_year_from = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+}).format(time1);
+
+
+
+
+
+const time2 = new Date();
+time2.setDate(time2.getDate()+7);
+let Curent_date_day_To = new Intl.DateTimeFormat("en-US", {
+  day: "2-digit",
+}).format(time2);
+
+let Curent_date_month_To = new Intl.DateTimeFormat("en-US", {
+  month: "2-digit",
+}).format(time2); 
+
+let Curent_date_year_To = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+}).format(time2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 const Summary = () => {
   return (

@@ -74,5 +74,45 @@
    ]
 
 
+   const UpcomingHolidaysData=[
+
+      {
+         date: "jul 8, 2022",
+         day:"friday",
+         event:"crismis"
+
+      },
+      
+      {
+         date: "jul 8, 2022",
+         day:"friday",
+         event:"crismis"
+
+      }, 
+      
+      {
+         date: "jul 8, 2022",
+         day:"friday",
+         event:"crismis"
+
+      }, 
+      
+      {
+         date: "jul 8, 2022",
+         day:"friday",
+         event:"crismis"
+
+      }, 
+      
+      {
+         date: "jul 8, 2022",
+         day:"friday",
+         event:"crismis"
+
+      },
+   ]
+
+
     export default UserData;
     export {LeaveBoxData};
+    export {UpcomingHolidaysData};
