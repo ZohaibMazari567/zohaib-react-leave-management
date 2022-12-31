@@ -2,45 +2,44 @@
     const UserData = [
        {  id:1,
           profile:"/images/pic.jpg",
-          name:"gowtham",
-          leaveType:"ss",
-          formTo:"outlook010"
+          name:"Momcilo Milijesevic",
+          leaveType:"Sick",
+          formTo:"Friday 02. Nov - Thursday 08. Nov"
        },
     
-  {  id:2,
+  
+       {  id:2,
           profile:"/images/pic.jpg",
-          name:"gowtham",
-          leaveType:"ss",
-          formTo:"outlook010"
+          name:"Momcilo Milijesevic",
+          leaveType:"Casual",
+          formTo:"Friday 02. Nov - Thursday 08. Nov"
        },
     
-  {  id:3,
+  
+       {  id:3,
           profile:"/images/pic.jpg",
-          name:"gowtham",
-          leaveType:"ss",
-          formTo:"outlook010"
+          name:"Momcilo Milijesevic",
+          leaveType:"Unpaid-Sick Day",
+          formTo:"Friday 02. Nov - Thursday 08. Nov"
        },
     
-  {  id:4,
+  
+       {  id:4,
           profile:"/images/pic.jpg",
-          name:"gowtham",
-          leaveType:"ss",
-          formTo:"outlook010"
+          name:"Momcilo Milijesevic",
+          leaveType:"Sick",
+          formTo:"Friday 02. Nov - Thursday 08. Nov"
        },
     
-  {  id:5,
+  
+       {  id:5,
           profile:"/images/pic.jpg",
-          name:"gowtham",
-          leaveType:"ss",
-          formTo:"outlook010"
+          name:"Momcilo Milijesevic",
+          leaveType:"casual",
+          formTo:"Friday 02. Nov - Thursday 08. Nov"
        },
     
-  {  id:6,
-          profile:"/images/pic.jpg",
-          name:"gowtham",
-          leaveType:"ss",
-          formTo:"outlook010"
-       },
+  
     
 
 
@@ -77,37 +76,50 @@
    const UpcomingHolidaysData=[
 
       {
-         date: "jul 8, 2022",
-         day:"friday",
-         event:"crismis"
+         date: "Jul 08, 2022",
+         day:"Friday",
+         event:"Arafat Day"
 
       },
       
       {
-         date: "jul 8, 2022",
-         day:"friday",
-         event:"crismis"
+         date: "Jul 09, 2022",
+         day:"Saturday",
+         event:"Eid al-Adha"
+         
 
       }, 
       
       {
-         date: "jul 8, 2022",
-         day:"friday",
-         event:"crismis"
+         date: "Jul 10, 2022",
+         day:"Monday",
+         event:"Eid al-Adha Holidays"
 
       }, 
       
       {
-         date: "jul 8, 2022",
-         day:"friday",
-         event:"crismis"
+         date: "Oct 08, 2022",
+         day:"Saturday",
+         event:"Prophet Birthday"
 
       }, 
       
       {
-         date: "jul 8, 2022",
-         day:"friday",
-         event:"crismis"
+         date: "Dec 01, 2022",
+         day:"Thursay",
+         event:"Commemoration Day"
+
+      },
+      
+      {
+         date: "Dec 02, 2022",
+         day:"Friday",
+         event:"National Day"
+
+      }, {
+         date: "Dec 03, 2022",
+         day:"Saturday",
+         event:"National Day Holiday"
 
       },
    ]

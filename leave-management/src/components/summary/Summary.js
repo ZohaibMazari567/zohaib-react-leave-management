@@ -24,15 +24,15 @@ const leave_date_To = [
 
 const time1 = new Date();
 time1.setDate(time1.getDate());
-let Curent_date_day_from = new Intl.DateTimeFormat("en-US", {
+let day_from = new Intl.DateTimeFormat("en-US", {
   day: "2-digit",
 }).format(time1);
 
-let Curent_date_month_from = new Intl.DateTimeFormat("en-US", {
+let month_from = new Intl.DateTimeFormat("en-US", {
   month: "2-digit",
 }).format(time1); 
 
-let Curent_date_year_from = new Intl.DateTimeFormat("en-US", {
+let year_from = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 }).format(time1);
 
@@ -42,15 +42,15 @@ let Curent_date_year_from = new Intl.DateTimeFormat("en-US", {
 
 const time2 = new Date();
 time2.setDate(time2.getDate()+7);
-let Curent_date_day_To = new Intl.DateTimeFormat("en-US", {
+let day_To = new Intl.DateTimeFormat("en-US", {
   day: "2-digit",
 }).format(time2);
 
-let Curent_date_month_To = new Intl.DateTimeFormat("en-US", {
+let month_To = new Intl.DateTimeFormat("en-US", {
   month: "2-digit",
 }).format(time2); 
 
-let Curent_date_year_To = new Intl.DateTimeFormat("en-US", {
+let year_To = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 }).format(time2);
 
@@ -70,7 +70,7 @@ let Curent_date_year_To = new Intl.DateTimeFormat("en-US", {
 
 const Summary = () => {
   return (
-    <>
+    <body className="body">
       <div className="main-section-container">
         <div className="summary-section">
           <div className="left-side">
@@ -86,17 +86,61 @@ const Summary = () => {
           <h1 className="heading">In next 7 days</h1>
 
           <hr className="next-days-hr" />
-          <h2 className="sub-heading">Friday 02/11/2018</h2>
 
-          <hr className="next-days-hr" />
 
-          <div className="box-days">
+
+
+
+          
+          {
+              leave_date_To.map((item)=>{
+
+
+               const date_Day = new Intl.DateTimeFormat("en-US", {
+                    day: "2-digit",
+                  }).format(item);
+                  
+                   const date_Month = new Intl.DateTimeFormat("en-US", {
+                    
+                     month: "2-digit",
+                   
+                   }).format(item);
+                   
+                     const date_Year = new Intl.DateTimeFormat("en-US", {
+                       year: "numeric",
+                     }).format(item);
+
+
+
+                      if(date_Year>=year_from && date_Year<=year_To)
+             {
+              if(date_Month>=month_from|| date_Month<=month_To)
+              {
+              
+              if(date_Day>day_from || date_Day<=day_To)
+              {
+                  return (
+                    <div>
+                      <h3 className="sub-heading">
+                        {date_Day + "/" + date_Month + "/" + date_Year}
+                      </h3>
+                      <hr></hr>
+                      {Next7DaysLeaves.map((date1) => {
+                        let date12 = new Intl.DateTimeFormat("en-US", {
+                          day: "2-digit",
+                        }).format(date1.DateTo);
+
+                        if (date12 === date_Day) {
+                          return (
+                          
+
+                             <div className="box-days">
             <div className="pic-name">
               <div>
                 <img src="images/pic.jpg" alt="" className="img-users" />
               </div>
               <div className="align">
-                <h3 className="name-users">Momcilo Milijasevic</h3>
+                <h3 className="name-users">{date1.Username}</h3>
                 <h4 className="days">(All Day)</h4>
               </div>
             </div>
@@ -106,61 +150,44 @@ const Summary = () => {
             </div>
           </div>
 
-          <div className="box-days">
-            <div className="pic-name">
-              <div>
-                <img src="images/test2.jpeg" alt="" className="img-users" />
-              </div>
-              <div className="align">
-                <h3 className="name-users">Somebody Else</h3>
-                <h4 className="days">(12:40pm-4pm)</h4>
-              </div>
-            </div>
+                          );
+                        }
+                      })}
+                    </div>
+                  );
+              }
+              }
+             }
 
-            <div>
-              <h4 className="reason">Paid-sick day</h4>
-            </div>
-          </div>
 
-          <h3 className="sub-heading">Monday 05/11/2018</h3>
-          <hr className="next-days-hr" />
+              })
+          }
 
-          <div className="box-days">
-            <div className="pic-name">
-              <div>
-                <img src="images/test3.jpeg" alt="" className="img-users" />
-              </div>
-              <div className="align">
-                <h3 className="name-users">Anybody Acually</h3>
-                <h4 className="days">(All Day)</h4>
-              </div>
-            </div>
 
-            <div>
-              <h4 className="reason">Jury Service</h4>
-            </div>
-          </div>
 
-          <div className="box-days">
-            <div className="pic-name">
-              <div>
-                <img src="images/test4.png" alt="" className="img-users" />
-              </div>
-              <div className="align">
-                <h3 className="name-users">Someone Here</h3>
-                <h4 className="days">(All Day)</h4>
-              </div>
-            </div>
 
-            <div>
-              <h4 className="reason">Study leave / Training</h4>
-            </div>
-          </div>
+
+          
+
+         
+
+
+
+
+
+
+
+         
+
+
+
+
+        
         </div>
       </div>
 
      {<LeavesTable/>}
-    </>
+    </body>
   );
 };
 

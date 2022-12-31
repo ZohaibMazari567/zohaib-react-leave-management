@@ -72,14 +72,13 @@ const Header = () =>
       </div>
 
       <div className="button">
-        <div className="option-list">
-          <select name="" id="">
-            <option value="">Name of organization</option>
-            <option value="">Name of organization</option>
-            <option value="">jName of organization</option>
-            <option value="">Name of organization</option>
-          </select>
-        </div>
+
+      <div className="search-bar">
+        
+        <img src="images/search.png" alt="" className="search-icon" />
+        <input type="text" className="search-input" placeholder="Search"/>
+
+     </div>
 
         <div>
           <img src="images/setting.png"alt="" class="navbar-icons" />
