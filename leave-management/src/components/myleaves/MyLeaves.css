@@ -1,0 +1,1787 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  @media (min-width: 0px) and (max-width: 320px) {
+   
+    /* --------------------------------------------------      */
+  
+    .mobile-navbar-btn {
+      display: block;
+      z-index: 999;
+  
+      height: 20px;
+      padding-bottom: 15px;
+      margin-top: 10px;
+    }
+    .header {
+      position: relative;
+    }
+    .navbar-list {
+      text-align: center;
+      display: flex;
+      list-style-type: none;
+      margin-top: 22px;
+      padding: 0px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 27px;
+    }
+    .header-logo-manu{
+      margin-right: 20pxpx;
+      
+    }
+    .navbar-list li{
+      border-bottom: 2px solid #e3e3e3;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-link {
+      
+    
+      text-decoration: none;
+      padding: 8px;
+      font-size: 25px;
+      color: rgb(139, 136, 136);
+      font-weight: 800;
+    }
+    .navbar {
+      width: 100%;
+      height: auto;
+      background: rgb(236, 236, 236);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      padding-top: 10px;
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+      opacity: 0;
+      visibility: hidden;
+  
+      pointer-events: none;
+    }
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+      border-radius: 50px;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      list-style-type: none;
+    }
+    
+  
+    .button {
+      display: none;
+    }
+  
+    .active .navbar {
+      transform: translateX(0);
+  
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+    .mobile-navbar-btn {
+      margin-right: 20px;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+  
+    .my-leaves-container {
+      border: 1px;
+  
+      border-radius: 10px;
+      height: 656px;
+  
+      margin-left: 10px;
+     
+      background-color: white;
+    }
+  
+    #my-leaves-heading {
+      padding-left: 10px;
+      padding-top: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: -10px;
+    }
+  
+    .leave-post-month {
+      margin-left: 13px;
+      margin-top: 18px;
+      margin-bottom: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(150, 148, 148);
+      font-size: 11px;
+      font-weight: 600;
+    }
+  
+    .my-leaves-forms {
+      background-color: rgb(243, 243, 243);
+      max-width: 310px;
+  
+      height: 45px;
+      padding-top: 2px;
+      padding-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+  
+    .my-leaves-option {
+      padding-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+    }
+  
+    .leave-box {
+      border: 2px solid rgb(219, 219, 219);
+      max-width: 290px;
+  
+      margin-top: 5px;
+      margin-bottom: 12px;
+  
+      margin-right: 15px;
+      height: auto;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+    }
+  
+    .leave-days {
+      margin: 7px;
+      margin-top: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(150, 148, 148);
+    }
+  
+    .leave-date {
+      margin-left: 7px;
+      margin-top: 5px;
+      padding-bottom: 10px;
+      margin-bottom: -7px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .rsn-casual {
+      margin-left: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(233, 184, 23);
+    }
+  
+    .rsn-sick {
+      margin-left: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(137, 86, 202);
+    }
+  
+    .iconbox {
+      margin-top: 20px;
+      margin-left: 125px;
+      background-color: rgb(243, 243, 243);
+      padding: 0px;
+      border-radius: 3px;
+      color: #9d9d9d;
+      font-size: 21px;
+    }
+    .sickicon {
+      margin-left: 221px;
+      background-color: rgb(243, 243, 243);
+      padding: 0px;
+      border-radius: 3px;
+      color: #9d9d9d;
+      font-size: 21px;
+    }
+    .leave-waiting {
+      border-radius: 5px;
+      padding: 4px 8px 4px 8px;
+      text-decoration-line: none;
+      background-color: rgb(255, 251, 200);
+      margin-left: 77px;
+      color: rgb(233, 184, 23);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  
+    .leave-approved {
+      border-radius: 5px;
+      padding: 4px 6px 4px 6px;
+      text-decoration-line: none;
+      background-color: rgb(187, 255, 201);
+      margin-left: 77px;
+      color: rgb(2, 116, 7);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  
+    .leave-declined {
+      border-radius: 5px;
+      padding: 4px 6px 4px 6px;
+      text-decoration-line: none;
+      background-color: rgb(253, 219, 219);
+      margin-left: 90px;
+      color: rgb(253, 37, 188);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      margin-right: 10px;
+      font-weight: 600;
+    }
+  
+    #leaves-all {
+      text-decoration: none;
+      padding-bottom: 13px;
+  
+      color: rgb(150, 148, 148);
+  
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .all-border {
+      padding-left: 33px;
+      padding-right: 33px;
+      padding-top: 14px;
+    }
+  
+    .all-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    #leaves-casual {
+      text-decoration: none;
+      color: rgb(150, 148, 148);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .casual-border {
+      padding-left: 14px;
+      padding-right: 20px;
+      padding-top: 14px;
+    }
+  
+    .casual-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    .oringe-icon-dot {
+      margin: auto;
+      font-size: 9px;
+      padding-right: 0px;
+      color: rgb(233, 184, 23);
+    }
+  
+    .blue-icon-dot {
+      margin: auto;
+      font-size: 9px;
+  
+      padding-left: 3px;
+      padding-right: 0px;
+      color: rgb(137, 86, 202);
+    }
+  
+    #leaves-sick {
+      color: rgb(150, 148, 148);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .sick-border {
+      padding-left: 14px;
+      padding-right: 24px;
+      padding-top: 14px;
+    }
+    .sick-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    .active-bg-color {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+    .section-display-none {
+      display: none;
+    }
+  }
+  
+  /* ----------------------------------------------------  */
+  @media (min-width: 321px) and (max-width: 375px) {
+    .mobile-navbar-btn {
+      display: block;
+      z-index: 999;
+  
+      height: 20px;
+      padding-bottom: 15px;
+      margin-top: 10px;
+    }
+    .header {
+      position: relative;
+    }
+    .navbar-list {
+      text-align: center;
+      display: flex;
+      list-style-type: none;
+      margin-top: 22px;
+      padding: 0px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 27px;
+    }
+    .header-logo-manu{
+      margin-right: 20pxpx;
+      
+    }
+    .navbar-list li{
+      border-bottom: 2px solid #e3e3e3;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-link {
+      
+    
+      text-decoration: none;
+      padding: 8px;
+      font-size: 25px;
+      color: rgb(139, 136, 136);
+      font-weight: 800;
+    }
+  
+    .navbar {
+      width: 100%;
+      height: auto;
+      background: rgb(236, 236, 236);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      padding-top: 10px;
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+      opacity: 0;
+      visibility: hidden;
+  
+      pointer-events: none;
+    }
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+      border-radius: 50px;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      list-style-type: none;
+    }
+   
+  
+    .button {
+      display: none;
+    }
+  
+    .active .navbar {
+      transform: translateX(0);
+  
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+    .mobile-navbar-btn {
+      margin-right: 20px;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+    /* --------------------------------------------------      */
+  
+    .my-leaves-container {
+      border: 1px;
+  
+      border-radius: 10px;
+      height: 656px;
+  
+      margin-left: 10px;
+     
+      background-color: white;
+    }
+  
+    #my-leaves-heading {
+      padding-left: 10px;
+      padding-top: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: -10px;
+    }
+  
+    .leave-post-month {
+      margin-left: 13px;
+      margin-top: 18px;
+      margin-bottom: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(150, 148, 148);
+      font-size: 11px;
+      font-weight: 600;
+    }
+  
+    .my-leaves-forms {
+      background-color: rgb(243, 243, 243);
+      max-width: 380px;
+  
+      height: 45px;
+      padding-top: 2px;
+      padding-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+  
+    .my-leaves-option {
+      padding-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+    }
+  
+    .leave-box {
+      border: 2px solid rgb(219, 219, 219);
+      max-width: 346px;
+  
+      margin-top: 5px;
+      margin-bottom: 12px;
+  
+      margin-right: 15px;
+      height: auto;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+    }
+  
+    .leave-days {
+      margin: 7px;
+      margin-top: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(150, 148, 148);
+    }
+  
+    .leave-date {
+      margin-left: 7px;
+      margin-top: 5px;
+      padding-bottom: 10px;
+      margin-bottom: -7px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .rsn-casual {
+      margin-left: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(233, 184, 23);
+    }
+  
+    .rsn-sick {
+      margin-left: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(137, 86, 202);
+    }
+  
+    .iconbox {
+      margin-top: 20px;
+      margin-left: 125px;
+      background-color: rgb(243, 243, 243);
+      padding: 0px;
+      border-radius: 3px;
+      color: #9d9d9d;
+      font-size: 21px;
+    }
+    .sickicon {
+      margin-left: 221px;
+      background-color: rgb(243, 243, 243);
+      padding: 0px;
+      border-radius: 3px;
+      color: #9d9d9d;
+      font-size: 21px;
+    }
+    .leave-waiting {
+      border-radius: 5px;
+      padding: 4px 8px 4px 8px;
+      text-decoration-line: none;
+      background-color: rgb(255, 251, 200);
+      margin-left: 77px;
+      color: rgb(233, 184, 23);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  
+    .leave-approved {
+      border-radius: 5px;
+      padding: 4px 6px 4px 6px;
+      text-decoration-line: none;
+      background-color: rgb(187, 255, 201);
+      margin-left: 77px;
+      color: rgb(2, 116, 7);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  
+    .leave-declined {
+      border-radius: 5px;
+      padding: 4px 6px 4px 6px;
+      text-decoration-line: none;
+      background-color: rgb(253, 219, 219);
+      margin-left: 90px;
+      color: rgb(253, 37, 188);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      margin-right: 10px;
+      font-weight: 600;
+    }
+  
+    #leaves-all {
+      text-decoration: none;
+      padding-bottom: 13px;
+  
+      color: rgb(150, 148, 148);
+  
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .all-border {
+      padding-left: 33px;
+      padding-right: 33px;
+      padding-top: 14px;
+    }
+  
+    .all-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    #leaves-casual {
+      text-decoration: none;
+      color: rgb(150, 148, 148);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .casual-border {
+      padding-left: 14px;
+      padding-right: 20px;
+      padding-top: 14px;
+    }
+  
+    .casual-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    .oringe-icon-dot {
+      margin: auto;
+      font-size: 9px;
+      padding-right: 0px;
+      color: rgb(233, 184, 23);
+    }
+  
+    .blue-icon-dot {
+      margin: auto;
+      font-size: 9px;
+  
+      padding-left: 3px;
+      padding-right: 0px;
+      color: rgb(137, 86, 202);
+    }
+  
+    #leaves-sick {
+      color: rgb(150, 148, 148);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .sick-border {
+      padding-left: 14px;
+      padding-right: 24px;
+      padding-top: 14px;
+    }
+    .sick-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    .active-bg-color {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+    .section-display-none {
+      display: none;
+    }
+  }
+  
+  /* -----------------------------------------------------  */
+  
+  @media (min-width: 376px) and (max-width: 425px) {
+    .mobile-navbar-btn {
+      display: block;
+      z-index: 999;
+  
+      height: 20px;
+      padding-bottom: 15px;
+     
+    }
+    .header {
+      position: relative;
+    }
+    .navbar-list {
+      text-align: center;
+      display: flex;
+      list-style-type: none;
+      margin-top: 22px;
+      padding: 0px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 27px;
+    }
+    .header-logo-manu{
+      margin-right: 20pxpx;
+      
+    }
+    .navbar-list li{
+      border-bottom: 2px solid #e3e3e3;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-link {
+      
+    
+      text-decoration: none;
+      padding: 8px;
+      font-size: 25px;
+      color: rgb(139, 136, 136);
+      font-weight: 800;
+    }
+    .navbar {
+      width: 100%;
+      height: auto;
+      background: rgb(236, 236, 236);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      padding-top: 10px;
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+      opacity: 0;
+      visibility: hidden;
+  
+      pointer-events: none;
+    }
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+      border-radius: 50px;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      list-style-type: none;
+    }
+  
+  
+    .button {
+      display: none;
+    }
+  
+    .active .navbar {
+      transform: translateX(0);
+  
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+    .mobile-navbar-btn {
+      margin-right: 20px;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+    /* --------------------------------------------------      */
+  
+    .my-leaves-container {
+      border: 1px;
+  
+      border-radius: 10px;
+      height: 656px;
+  
+      margin-left: 10px;
+     
+      background-color: white;
+    }
+  
+    #my-leaves-heading {
+      padding-left: 10px;
+      padding-top: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: -10px;
+    }
+  
+    .leave-post-month {
+      margin-left: 13px;
+      margin-top: 18px;
+      margin-bottom: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(150, 148, 148);
+      font-size: 11px;
+      font-weight: 600;
+    }
+  
+    .my-leaves-forms {
+      background-color: rgb(243, 243, 243);
+      max-width: 430px;
+  
+      height: 45px;
+      padding-top: 2px;
+      padding-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+  
+    .my-leaves-option {
+      padding-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+    }
+  
+    .leave-box {
+      border: 2px solid rgb(219, 219, 219);
+      max-width: 430px;
+  
+      margin-top: 5px;
+      margin-bottom: 12px;
+  
+      margin-right: 15px;
+      height: auto;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+    }
+  
+    .leave-days {
+      margin: 7px;
+      margin-top: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(150, 148, 148);
+    }
+  
+    .leave-date {
+      margin-left: 7px;
+      margin-top: 5px;
+      padding-bottom: 10px;
+      margin-bottom: -7px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .rsn-casual {
+      margin-left: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(233, 184, 23);
+    }
+  
+    .rsn-sick {
+      margin-left: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(137, 86, 202);
+    }
+  
+    .iconbox {
+      margin-top: 20px;
+      margin-left: 125px;
+      background-color: rgb(243, 243, 243);
+      padding: 0px;
+      border-radius: 3px;
+      color: #9d9d9d;
+      font-size: 21px;
+    }
+    .sickicon {
+      margin-left: 221px;
+      background-color: rgb(243, 243, 243);
+      padding: 0px;
+      border-radius: 3px;
+      color: #9d9d9d;
+      font-size: 21px;
+    }
+    .leave-waiting {
+      border-radius: 5px;
+      padding: 4px 8px 4px 8px;
+      text-decoration-line: none;
+      background-color: rgb(255, 251, 200);
+      margin-left: 77px;
+      color: rgb(233, 184, 23);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  
+    .leave-approved {
+      border-radius: 5px;
+      padding: 4px 6px 4px 6px;
+      text-decoration-line: none;
+      background-color: rgb(187, 255, 201);
+      margin-left: 77px;
+      color: rgb(2, 116, 7);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  
+    .leave-declined {
+      border-radius: 5px;
+      padding: 4px 6px 4px 6px;
+      text-decoration-line: none;
+      background-color: rgb(253, 219, 219);
+      margin-left: 90px;
+      color: rgb(253, 37, 188);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      margin-right: 10px;
+      font-weight: 600;
+    }
+  
+    #leaves-all {
+      padding-bottom: 13px;
+      text-decoration: none;
+  
+      color: rgb(150, 148, 148);
+  
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .all-border {
+      padding-left: 33px;
+      padding-right: 33px;
+      padding-top: 14px;
+    }
+  
+    .all-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    #leaves-casual {
+      color: rgb(150, 148, 148);
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .casual-border {
+      padding-left: 14px;
+      padding-right: 20px;
+      padding-top: 14px;
+    }
+  
+    .casual-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    .oringe-icon-dot {
+      margin: auto;
+      font-size: 9px;
+      padding-right: 0px;
+      color: rgb(233, 184, 23);
+    }
+  
+    .blue-icon-dot {
+      margin: auto;
+      font-size: 9px;
+  
+      padding-left: 3px;
+      padding-right: 0px;
+      color: rgb(137, 86, 202);
+    }
+  
+    #leaves-sick {
+      color: rgb(150, 148, 148);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .sick-border {
+      padding-left: 14px;
+      padding-right: 24px;
+      padding-top: 14px;
+    }
+    .sick-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    .active-bg-color {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+    .section-display-none {
+      display: none;
+    }
+  }
+  
+  /* tablet view  */
+  /* --------------------------------------  */
+  @media (min-width: 426px) and (max-width: 768px) {
+    .mobile-navbar-btn {
+      display: block;
+      z-index: 999;
+  
+      height: 20px;
+      padding-bottom: 15px;
+      margin-top: 10px;
+    }
+    .header {
+      position: relative;
+    }
+    .navbar-list {
+      text-align: center;
+      display: flex;
+      list-style-type: none;
+      margin-top: 22px;
+      padding: 0px;
+      margin: auto;
+      padding-top: 20px;
+      padding-bottom: 27px;
+    }
+    .header-logo-manu{
+      margin-right: 20pxpx;
+      
+    }
+    .navbar-list li{
+      border-bottom: 2px solid #e3e3e3;
+      text-align: center;
+      padding: 20px;
+    }
+    .navbar-link {
+      
+    
+      text-decoration: none;
+      padding: 8px;
+      font-size: 25px;
+      color: rgb(139, 136, 136);
+      font-weight: 800;
+    }
+  body{
+    background-color: rgb(235, 235, 235);
+  }
+    .navbar {
+      width: 100%;
+      height: auto;
+      background: rgb(236, 236, 236);
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      padding-top: 10px;
+      transform: translateX(100%);
+      transition: all 0.5s linear;
+      opacity: 0;
+      visibility: hidden;
+  
+      pointer-events: none;
+    }
+    .header-logo {
+      width: 60px;
+      height: 60px;
+      margin-left: 20px;
+      border-radius: 50px;
+    }
+  
+    .navbar-list {
+      flex-direction: column;
+      list-style-type: none;
+    }
+  
+  
+    .button {
+      display: none;
+    }
+  
+    .active .navbar {
+      transform: translateX(0);
+  
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="close-outline"] {
+      display: block;
+    }
+    .mobile-navbar-btn {
+      margin-right: 20px;
+    }
+    .active .mobile-navbar-btn .mobile-nav-icon[name="menu-outline"] {
+      display: none;
+    }
+    /* --------------------------------------------------      */
+  
+    .my-leaves-container {
+      height: 580px;
+      max-width: 555px;
+      margin: auto;
+      border-radius: 10px;
+      background-color: white;
+      padding-left: 10px;
+      margin-top: 20px;
+    }
+  
+    #my-leaves-heading {
+      padding-left: 10px;
+      padding-top: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: -10px;
+    }
+  
+    .leave-post-month {
+      margin-left: 13px;
+      margin-top: 18px;
+      margin-bottom: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(150, 148, 148);
+      font-size: 11px;
+      font-weight: 600;
+    }
+  
+    .my-leaves-forms {
+      background-color: rgb(243, 243, 243);
+      max-width: 580px;
+  
+      height: 45px;
+      padding-top: 2px;
+      padding-bottom: 4px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+      margin-right: 15px;
+    }
+  
+    .my-leaves-option {
+      padding-top: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+    }
+  
+    .leave-box {
+      border: 2px solid rgb(219, 219, 219);
+      max-width: 655px;
+  
+      margin-top: 5px;
+      margin-bottom: 12px;
+  
+      margin-right: 15px;
+      height: auto;
+      padding-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+    }
+  
+    .leave-days {
+      margin: 7px;
+      margin-top: 5px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(150, 148, 148);
+    }
+  
+    .leave-date {
+      margin-left: 7px;
+      margin-top: 5px;
+      padding-bottom: 10px;
+      margin-bottom: -7px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  
+    .rsn-casual {
+      margin-left: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(233, 184, 23);
+    }
+  
+    .rsn-sick {
+      margin-left: 7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: rgb(137, 86, 202);
+    }
+  
+    .iconbox {
+      margin-top: 20px;
+      margin-left: 125px;
+      background-color: rgb(243, 243, 243);
+      padding: 0px;
+      border-radius: 3px;
+      color: #9d9d9d;
+      font-size: 21px;
+    }
+    .sickicon {
+      margin-left: 221px;
+      background-color: rgb(243, 243, 243);
+      padding: 0px;
+      border-radius: 3px;
+      color: #9d9d9d;
+      font-size: 21px;
+    }
+    .leave-waiting {
+      border-radius: 5px;
+      padding: 4px 8px 4px 8px;
+      text-decoration-line: none;
+      background-color: rgb(255, 251, 200);
+      margin-left: 77px;
+      color: rgb(233, 184, 23);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  
+    .leave-approved {
+      border-radius: 5px;
+      padding: 4px 6px 4px 6px;
+      text-decoration-line: none;
+      background-color: rgb(187, 255, 201);
+      margin-left: 77px;
+      color: rgb(2, 116, 7);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      margin-right: 10px;
+    }
+  
+    .leave-declined {
+      border-radius: 5px;
+      padding: 4px 6px 4px 6px;
+      text-decoration-line: none;
+      background-color: rgb(253, 219, 219);
+      margin-left: 90px;
+      color: rgb(253, 37, 188);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      margin-right: 10px;
+      font-weight: 600;
+    }
+  
+    #leaves-all {
+      padding-bottom: 13px;
+      text-decoration: none;
+  
+      color: rgb(150, 148, 148);
+  
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .all-border {
+      padding-left: 33px;
+      padding-right: 33px;
+      padding-top: 14px;
+    }
+  
+    .all-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    #leaves-casual {
+      color: rgb(150, 148, 148);
+      font-size: 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .casual-border {
+      padding-left: 14px;
+      padding-right: 20px;
+      padding-top: 14px;
+    }
+  
+    .casual-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    .oringe-icon-dot {
+      margin: auto;
+      font-size: 9px;
+      padding-right: 0px;
+      color: rgb(233, 184, 23);
+    }
+  
+    .blue-icon-dot {
+      margin: auto;
+      font-size: 9px;
+  
+      padding-left: 3px;
+      padding-right: 0px;
+      color: rgb(137, 86, 202);
+    }
+  
+    #leaves-sick {
+      color: rgb(150, 148, 148);
+      font-size: 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .sick-border {
+      padding-left: 14px;
+      padding-right: 24px;
+      padding-top: 14px;
+    }
+    .sick-border:hover {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+  
+    .active-bg-color {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0px 0px 4px 0px #9d9d9d;
+    }
+    .section-display-none {
+      display: none;
+    }
+  }
+  
+  
+  /* desktop veiw  */
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+      
+      /* --------------------------------------------------      */
+    body{
+      background-color: rgba(233, 231, 231, 0.62);
+    }
+      .my-leaves-container {
+        height: 580px;
+        max-width: 555px;
+        margin: auto;
+        background-color: white;
+        padding-left: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+    
+      #my-leaves-heading {
+        padding-left: 10px;
+        padding-top: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: -10px;
+      }
+    
+      .leave-post-month {
+        margin-left: 13px;
+        margin-top: 18px;
+        margin-bottom: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(150, 148, 148);
+        font-size: 11px;
+        font-weight: 600;
+      }
+    
+      .my-leaves-forms {
+        background-color: rgb(243, 243, 243);
+        max-width: 580px;
+    
+        height: 45px;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin-right: 15px;
+      }
+    
+      .my-leaves-option {
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+    
+      .leave-box {
+        border: 2px solid rgb(219, 219, 219);
+        max-width: 655px;
+    
+        margin-top: 5px;
+        margin-bottom: 12px;
+    
+        margin-right: 15px;
+        height: auto;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+      }
+    
+      .leave-days {
+        margin: 7px;
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(150, 148, 148);
+      }
+    
+      .leave-date {
+        margin-left: 7px;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        margin-bottom: -7px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    
+      .rsn-casual {
+        margin-left: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(233, 184, 23);
+      }
+    
+      .rsn-sick {
+        margin-left: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(137, 86, 202);
+      }
+    
+      .iconbox {
+        margin-top: 20px;
+        margin-left: 125px;
+        background-color: rgb(243, 243, 243);
+        padding: 0px;
+        border-radius: 3px;
+        color: #9d9d9d;
+        font-size: 21px;
+      }
+      .sickicon {
+        margin-left: 221px;
+        background-color: rgb(243, 243, 243);
+        padding: 0px;
+        border-radius: 3px;
+        color: #9d9d9d;
+        font-size: 21px;
+      }
+      .leave-waiting {
+        border-radius: 5px;
+        padding: 4px 8px 4px 8px;
+        text-decoration-line: none;
+        background-color: rgb(255, 251, 200);
+        margin-left: 77px;
+        color: rgb(233, 184, 23);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+    
+      .leave-approved {
+        border-radius: 5px;
+        padding: 4px 6px 4px 6px;
+        text-decoration-line: none;
+        background-color: rgb(187, 255, 201);
+        margin-left: 77px;
+        color: rgb(2, 116, 7);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+    
+      .leave-declined {
+        border-radius: 5px;
+        padding: 4px 6px 4px 6px;
+        text-decoration-line: none;
+        background-color: rgb(253, 219, 219);
+        margin-left: 90px;
+        color: rgb(253, 37, 188);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin-right: 10px;
+        font-weight: 600;
+      }
+    
+      #leaves-all {
+        padding-bottom: 13px;
+        text-decoration: none;
+        color: rgb(150, 148, 148);
+    
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .all-border {
+        padding-left: 33px;
+        padding-right: 33px;
+        padding-top: 14px;
+      }
+    
+      .all-border:hover {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 0px #9d9d9d;
+      }
+    
+      #leaves-casual {
+        color: rgb(150, 148, 148);
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .casual-border {
+        padding-left: 14px;
+        padding-right: 20px;
+        padding-top: 14px;
+      }
+    
+      .casual-border:hover {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 0px #9d9d9d;
+      }
+    
+      .oringe-icon-dot {
+        margin: auto;
+        font-size: 9px;
+        padding-right: 0px;
+        color: rgb(233, 184, 23);
+      }
+    
+      .blue-icon-dot {
+        margin: auto;
+        font-size: 9px;
+    
+        padding-left: 3px;
+        padding-right: 0px;
+        color: rgb(137, 86, 202);
+      }
+    
+      #leaves-sick {
+        color: rgb(150, 148, 148);
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .sick-border {
+        padding-left: 14px;
+        padding-right: 24px;
+        padding-top: 14px;
+      }
+      .sick-border:hover {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 0px #9d9d9d;
+      }
+    
+      .active-bg-color {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 0px #9d9d9d;
+      }
+      .section-display-none {
+        display: none;
+      }
+    }
+  
+    /* large screen  */
+  
+    @media (min-width: 1025px)  {
+      
+      /* --------------------------------------------------      */
+    body{
+      background-color: rgba(233, 231, 231, 0.62);
+    }
+      .my-leaves-container {
+        height: 580px;
+        max-width: 555px;
+        margin: auto;
+        background-color: white;
+        padding-left: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+      }
+    
+      #my-leaves-heading {
+        padding-left: 10px;
+        padding-top: 1px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: -10px;
+      }
+    
+      .leave-post-month {
+        margin-left: 13px;
+        margin-top: 18px;
+        margin-bottom: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(150, 148, 148);
+        font-size: 11px;
+        font-weight: 600;
+      }
+    
+      .my-leaves-forms {
+        background-color: rgb(243, 243, 243);
+        max-width: 580px;
+    
+        height: 45px;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        margin-right: 15px;
+      }
+    
+      .my-leaves-option {
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+      }
+    
+      .leave-box {
+        border: 2px solid rgb(219, 219, 219);
+        max-width: 655px;
+    
+        margin-top: 5px;
+        margin-bottom: 12px;
+    
+        margin-right: 15px;
+        height: auto;
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+      }
+    
+      .leave-days {
+        margin: 7px;
+        margin-top: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(150, 148, 148);
+      }
+    
+      .leave-date {
+        margin-left: 7px;
+        margin-top: 5px;
+        padding-bottom: 10px;
+        margin-bottom: -7px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    
+      .rsn-casual {
+        margin-left: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(233, 184, 23);
+      }
+    
+      .rsn-sick {
+        margin-left: 7px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        color: rgb(137, 86, 202);
+      }
+    
+      .iconbox {
+        margin-top: 20px;
+        margin-left: 125px;
+        background-color: rgb(243, 243, 243);
+        padding: 0px;
+        border-radius: 3px;
+        color: #9d9d9d;
+        font-size: 21px;
+      }
+      .sickicon {
+        margin-left: 221px;
+        background-color: rgb(243, 243, 243);
+        padding: 0px;
+        border-radius: 3px;
+        color: #9d9d9d;
+        font-size: 21px;
+      }
+      .leave-waiting {
+        border-radius: 5px;
+        padding: 4px 8px 4px 8px;
+        text-decoration-line: none;
+        background-color: rgb(255, 251, 200);
+        margin-left: 77px;
+        color: rgb(233, 184, 23);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+    
+      .leave-approved {
+        border-radius: 5px;
+        padding: 4px 6px 4px 6px;
+        text-decoration-line: none;
+        background-color: rgb(187, 255, 201);
+        margin-left: 77px;
+        color: rgb(2, 116, 7);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: 600;
+        margin-right: 10px;
+      }
+    
+      .leave-declined {
+        border-radius: 5px;
+        padding: 4px 6px 4px 6px;
+        text-decoration-line: none;
+        background-color: rgb(253, 219, 219);
+        margin-left: 90px;
+        color: rgb(253, 37, 188);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin-right: 10px;
+        font-weight: 600;
+      }
+    
+      #leaves-all {
+        padding-bottom: 13px;
+        text-decoration: none;
+        color: rgb(150, 148, 148);
+    
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .all-border {
+        padding-left: 33px;
+        padding-right: 33px;
+        padding-top: 14px;
+      }
+    
+      .all-border:hover {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 0px #9d9d9d;
+      }
+    
+      #leaves-casual {
+        color: rgb(150, 148, 148);
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .casual-border {
+        padding-left: 14px;
+        padding-right: 20px;
+        padding-top: 14px;
+      }
+    
+      .casual-border:hover {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 0px #9d9d9d;
+      }
+    
+      .oringe-icon-dot {
+        margin: auto;
+        font-size: 9px;
+        padding-right: 0px;
+        color: rgb(233, 184, 23);
+      }
+    
+      .blue-icon-dot {
+        margin: auto;
+        font-size: 9px;
+    
+        padding-left: 3px;
+        padding-right: 0px;
+        color: rgb(137, 86, 202);
+      }
+    
+      #leaves-sick {
+        color: rgb(150, 148, 148);
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      .sick-border {
+        padding-left: 14px;
+        padding-right: 24px;
+        padding-top: 14px;
+      }
+      .sick-border:hover {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 0px #9d9d9d;
+      }
+    
+      .active-bg-color {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 0px #9d9d9d;
+      }
+      .section-display-none {
+        display: none;
+      }
+    }
